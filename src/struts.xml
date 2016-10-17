@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ 
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+     "http://struts.apache.org/dtds/struts-2.5.dtd">
+ 
+ <!-- START SNIPPET: xworkSample -->
+ <struts>
+
+    <package name="wei" extends="struts-default">
+ 
+        <action name="login" class="com.info.action.LoginAction" method="execute">
+        
+        <result name="success">/WEB-INF/success.jsp</result>
+        <result name="error">/WEB-INF/error.jsp</result>
+        <result name="nobook">/WEB-INF/nobook.jsp</result>
+         </action>
+         
+         
+         <action name="choose" class="com.info.action.LoginAction" method="xiangxi">
+          <result name="xiangxixinxi">/WEB-INF/xiangxixinxi.jsp</result>
+         </action>
+         
+         
+         <action name="delete" class="com.info.action.LoginAction" method="shanchu">
+          <result name="deletesuccess">/WEB-INF/shanchu.jsp</result>
+         </action>
+         
+          <action name="xinzeng" class="com.info.action.LoginAction" method="xinzengxinxi">
+          
+        <result name="xinzengchenggong">/WEB-INF/xinzeng.jsp</result>
+        <result name="tianjiazuozhe">/WEB-INF/tianjia.jsp</result>
+         </action>
+         
+         <action name="tianjia" class="com.info.action.LoginAction" method="tianjiazuo">
+          
+        <result name="tianjiazuozhechenggong">/WEB-INF/tianjiazuozhechenggong.jsp</result>
+     
+         </action>
+         
+         <action name="gengxin" class="com.info.action.LoginAction" method="gengxintushu">
+          
+        <result name="genxintushuchenggong">/WEB-INF/gxts.jsp</result>
+     
+         </action>
+     </package>
+
+ 
+ </struts>
+<!-- END SNIPPET: xworkSample -->
