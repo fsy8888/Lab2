@@ -13,6 +13,7 @@ public class LoginAction {
     private Dao dao=new Dao();
     public List<dao_book> Reportlist=new  ArrayList<dao_book>();
     int j=0;
+    
     dao_author author=new dao_author();
     dao_book book=new dao_book();
     
@@ -168,6 +169,8 @@ public class LoginAction {
 		   book1.setPrice( nll.getString(6));
 		   Reportlist.add(j,book1);
 		   j=j+1;
+		   System.out.println("这是更改的地方");
+		   
 		 }
 
     	 if(j!=0)//有人有书
